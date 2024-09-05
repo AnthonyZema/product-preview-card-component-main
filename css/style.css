@@ -5,6 +5,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,68 +14,89 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 1440px;
+  width: 100vw;
 }
 
 main {
   height: 450px;
   width: 600px;
   background-color: rgb(255, 255, 255);
-  overflow: hidden;
   border-radius: 13px;
   display: flex;
-  align-self: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 main figure {
-  height: 450px;
-  width: 300px;
+  height: 100%;
+  width: 50%;
 }
 main figure img {
   height: 100%;
   width: 100%;
 }
 main section {
-  padding: 20px;
+  padding: 30px;
   height: 450px;
-  width: 300px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: start;
 }
 main #Perfume {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 main #Tít {
   font-family: "Fraunces", serif;
+  font-size: 32px;
+  color: hsl(228, 12%, 13%);
+  line-height: 1;
+  margin-bottom: 20px;
 }
 main #Info {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.6;
+  margin-bottom: 30px;
 }
 main #PreçoDesc {
   font-family: "Fraunces", serif;
   color: hsl(158, 36%, 37%);
-  font-size: 30px;
+  font-size: 32px;
 }
 main #PreçoOrig {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
 }
 main .Preço {
   display: flex;
   align-items: center;
   width: 200px;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 main .Botão {
   background-color: hsl(158, 36%, 37%);
   border-radius: 5px;
   align-items: center;
   display: flex;
-  padding: 15px;
+  padding: 15px 20px;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  margin-top: auto;
+}
+main .Botão:hover {
+  background-color: hsl(158, 36%, 25%);
 }/*# sourceMappingURL=style.css.map */
